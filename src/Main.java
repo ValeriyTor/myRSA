@@ -13,7 +13,7 @@ public class Main {
 //        Scanner scanner = new Scanner(System.in);
 //        System.out.println("Enter your message:");
 //        message = scanner.nextLine();
-        // crete open and private keys
+        // create open and private keys
         myRSA.getKey();
         BigInteger messageCod = new BigInteger(message.getBytes());
         // encrypt message
