@@ -2,7 +2,6 @@ import java.math.BigInteger;
 import java.security.SecureRandom;
 
 public class myRSA {
-    private final static BigInteger one = new BigInteger("1");
     private static BigInteger privateKey;
     private static BigInteger publicKey;
     private static BigInteger n;
@@ -23,7 +22,7 @@ public class myRSA {
         System.out.println("modulus (n): " + n);
         eiler = (p.subtract(BigInteger.ONE)).multiply(q.subtract(BigInteger.ONE));
         System.out.println("eiler: " + eiler);
-        e = new BigInteger("65537"); // common value in practice = 2^16 + 1
+        e = new BigInteger("65537"); // common value 
         System.out.println("e: " + e);
         d = e.modInverse(eiler);
         publicKey = e;
