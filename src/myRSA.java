@@ -22,7 +22,7 @@ public class myRSA {
         System.out.println("modulus (n): " + n);
         eiler = (p.subtract(BigInteger.ONE)).multiply(q.subtract(BigInteger.ONE));
         System.out.println("eiler: " + eiler);
-        e = new BigInteger("65537"); // common value 
+        e = new BigInteger("65537"); // common 
         System.out.println("e: " + e);
         d = e.modInverse(eiler);
         publicKey = e;
